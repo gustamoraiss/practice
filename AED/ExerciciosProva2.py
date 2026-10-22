@@ -30,3 +30,20 @@ def pesquisa_binaria(l, k):
 
 print(pesquisa_binaria(ld, 3))
 
+# ========================================
+
+lr = [9,8,7,6,5,4,3,1]
+def pesquisa_binaria_recursiva(l, k, ini, fin):
+
+    if ini <= fin:
+        meio = (ini + fin) // 2
+
+        if l[meio] == k:
+            return meio
+        elif l[meio] > k:
+            return pesquisa_binaria_recursiva(l, k, meio + 1, fin)
+        elif l[meio] < k:
+            return pesquisa_binaria_recursiva(l, k, ini, meio - 1)
+    return -1
+
+print(pesquisa_binaria_recursiva(lr, 3, 0, len(lr) - 1))
