@@ -47,3 +47,20 @@ def pesquisa_binaria_recursiva(l, k, ini, fin):
     return -1
 
 print(pesquisa_binaria_recursiva(lr, 3, 0, len(lr) - 1))
+
+# ========================================
+
+
+
+# ========================================
+
+lc = [1,2,3,4,5,6,7,8,9]
+def cria_arvore_busca(l, inf, sup):
+
+    if inf <= sup:
+        meio = (inf + sup) // 2
+        print(l[meio]) 
+        cria_arvore_busca(l, inf, meio - 1)
+        cria_arvore_busca(l, meio + 1, sup)
+
+cria_arvore_busca(lc, 0, 8)
