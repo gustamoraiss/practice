@@ -64,3 +64,19 @@ def cria_arvore_busca(l, inf, sup):
         cria_arvore_busca(l, meio + 1, sup)
 
 cria_arvore_busca(lc, 0, 8)
+
+# ========================================
+
+def encontra_indiceA_recursivo(chave, arvore):
+    p = arvore
+    if p == None:
+        return -1
+
+    if p != None:
+        if chave == p.dado.chave:
+            return p.dado.indice
+        if chave < p.dado.chave:
+            return encontra_indiceA_recursivo(chave, p.esq)
+        else:
+            return encontra_indiceA_recursivo(chave, p.dir)
+    return -1
