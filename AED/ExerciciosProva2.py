@@ -80,3 +80,11 @@ def encontra_indiceA_recursivo(chave, arvore):
         else:
             return encontra_indiceA_recursivo(chave, p.dir)
     return -1
+
+# ========================================
+
+def lista_ordenada(arvore):
+    if arvore != None:
+        lista_ordenada(arvore.esq)
+        print(arvore.dado.chave)
+        lista_ordenada(arvore.dir)
