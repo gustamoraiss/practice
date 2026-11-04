@@ -14,15 +14,20 @@ const geistMono = Geist_Mono({
 const nome = 'Gustavo'
 let canal = 'GustavoCursos'
 
-function retNome() {
-  return nome
+function Topo() {
+  return (
+    <div>
+      <div>Logo</div>
+      <div>{canal}</div>
+      <div>{nome}</div>
+    </div>
+  )
 }
 
 export default function Home() {
   return (
     <main>
-      <div>{retNome()}</div>
-      <div>{canal}</div>
+      <Topo/>
       <div>Curso de React/Next</div>
       <div>TypeScript</div>
       <div>React</div>
