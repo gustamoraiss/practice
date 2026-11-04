@@ -11,12 +11,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });*/
 
+const nome = 'Gustavo'
+let canal = 'GustavoCursos'
+
+function retNome() {
+  return nome
+}
+
 export default function Home() {
   return (
     <main>
-      <div>GustavoCursos</div>
+      <div>{retNome()}</div>
+      <div>{canal}</div>
       <div>Curso de React/Next</div>
-      <div>Typecript</div>
+      <div>TypeScript</div>
       <div>React</div>
     </main>
   );
