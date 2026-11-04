@@ -14,11 +14,15 @@ const geistMono = Geist_Mono({
 const nome = 'Gustavo'
 let canal = 'GustavoCursos'
 
+
 function Topo() {
   return (
-    <div>
+    <div className="flex justify-between items-center bg-zinc-300 h-25">
       <div>Logo</div>
-      <div>{canal}</div>
+      <div className="flex flex-col justify-center items-center">
+        <div className="text-3xl">{canal}</div>
+        <div className="subtituloTopo">Curso de React</div>
+      </div>
       <div>{nome}</div>
     </div>
   )
