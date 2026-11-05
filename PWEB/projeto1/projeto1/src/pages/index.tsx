@@ -12,15 +12,15 @@ const geistMono = Geist_Mono({
 });*/
 
 const nome = 'Gustavo'
-let canal = 'GustavoCursos'
+const canal = 'GustavoCursos'
 
 
 function Topo() {
   return (
-    <div className="flex justify-between items-center bg-zinc-300 h-25">
+    <div className="topo">
       <div>Logo</div>
-      <div className="flex flex-col justify-center items-center">
-        <div className="text-3xl">{canal}</div>
+      <div className="topoCentro">
+        <div className="canal">{canal}</div>
         <div className="subtituloTopo">Curso de React</div>
       </div>
       <div>{nome}</div>
@@ -32,9 +32,20 @@ export default function Home() {
   return (
     <main>
       <Topo/>
-      <div>Curso de React/Next</div>
-      <div>TypeScript</div>
-      <div>React</div>
+      <div style={testecss}>
+        <div>Curso de React/Next</div>
+        <div>TypeScript</div>
+        <div style={{color: '#f00', backgroundColor: '#bbb'}}>React</div>
+      </div>
     </main>
   );
+}
+
+const testecss = {
+  display: 'flex',
+  justifyContent: 'Center',
+  alignItems: 'Center',
+  color: '#00f',
+  backgroundColor: '#eee',
+  fontSize: '20px'
 }

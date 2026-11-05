@@ -1,3 +1,22 @@
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    background-color: #d4d4d8;
+}
+
+.topoCentro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.canal {
+    font-size: 1.875rem;
+}
+
 .subtituloTopo {
     color: #00f;
     font-weight: bold;
