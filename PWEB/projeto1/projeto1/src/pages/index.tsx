@@ -11,22 +11,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });*/
 
+import Topo from "@/components/Topo";
+
 const nome = 'Gustavo'
 const canal = 'GustavoCursos'
-
-
-function Topo() {
-  return (
-    <div className="topo">
-      <div>Logo</div>
-      <div className="topoCentro">
-        <div className="canal">{canal}</div>
-        <div className="subtituloTopo">Curso de React</div>
-      </div>
-      <div>{nome}</div>
-    </div>
-  )
-}
 
 export default function Home() {
   return (
