@@ -23,6 +23,5 @@ public class Main {
         int classficacao = (int) (media / 2);
         System.out.println(classficacao);
 
-        int dois = 2;
     }
 }
